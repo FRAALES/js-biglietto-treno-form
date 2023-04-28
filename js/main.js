@@ -11,7 +11,6 @@ let prezzoConLoSconto;
 // Chiedi all'utente Nome e Cognome
 function myFunction() {
 nomeUtente = document.getElementById("nome").value;
-document.getElementById("demo").innerHTML = text;
         }
 
         console.log(nomeUtente);
@@ -23,7 +22,6 @@ document.getElementById("demo").innerHTML = text;
 
 function myFunction() {
     kmUtente = document.getElementById("km").value;
-    document.getElementById("nemo").innerHTML = text;
             }
     
             console.log(kmUtente);
@@ -33,7 +31,6 @@ function myFunction() {
 // Chiedi all’utente la sua età, 
 function myFunction() {
     etaUtente = document.getElementById("eta").value;
-    document.getElementById("emo").innerHTML = text;
             }
     
             console.log(etaUtente);
