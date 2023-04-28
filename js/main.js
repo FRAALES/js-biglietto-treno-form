@@ -1,4 +1,5 @@
 // Dichiaro le mie variabili
+let nomeUtente;
 let kmUtente;
 let etaUtente;
 const prezzoKm = 0.21;
@@ -7,16 +8,36 @@ let prezzoConLoSconto;
 
 
 
+// Chiedi all'utente Nome e Cognome
+function myFunction() {
+nomeUtente = document.getElementById("nome").value;
+document.getElementById("demo").innerHTML = text;
+        }
+
+        console.log(nomeUtente);
+
+
+
 
 // Chiedi all'utente quanti km vuole percorrere
 
-kmUtente = parseInt (prompt("Quanti km vuoi percorrere?"));
-console.log(kmUtente);
+function myFunction() {
+    kmUtente = document.getElementById("km").value;
+    document.getElementById("nemo").innerHTML = text;
+            }
+    
+            console.log(kmUtente);
+
 
 
 // Chiedi all’utente la sua età, 
-etaUtente = parseInt (prompt("Quanti anni hai?"));
-console.log(etaUtente);
+function myFunction() {
+    etaUtente = document.getElementById("eta").value;
+    document.getElementById("emo").innerHTML = text;
+            }
+    
+            console.log(etaUtente);
+
 
 
 // Moltiplica kmUtente per 0,21
@@ -58,4 +79,4 @@ console.log(messaggio);
 
 // Scrivi sulla pagina il prezzo del biglietto
 
-document.getElementById("mio_id").innerHTML = messaggio;
+document.getElementById("mio_form").innerHTML = messaggio;
