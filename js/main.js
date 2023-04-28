@@ -5,14 +5,18 @@ let etaUtente;
 const prezzoKm = 0.21;
 let prezzoSenzaSconto;
 let prezzoConLoSconto;
+let bottoneGenera = document.getElementById("genera");
 
 
 
 // Chiedi all'utente Nome e Cognome, quanti km vuole percorrere,la sua età
+bottoneGenera.addEventListener('click', 
+    
 function myFunction() {
 nomeUtente = document.getElementById("nome").value;
 kmUtente = document.getElementById("km").value;
 etaUtente = document.getElementById("eta").value;
+
 
 
 // Moltiplica kmUtente per 0,21
@@ -45,17 +49,15 @@ else {
     prezzoConLoSconto = prezzoSenzaSconto;
 };
 
+// Qui gli dico che quando clicco sul pulsante GENERA mi deve far apparire il prezzo del biglietto
+document.getElementById("mio_form").innerHTML= `${prezzoConLoSconto}` + ' euro'
 
 
 
-// Scriviamo messaggio per utente
-let messaggio = `Il prezzo del biglietto è ${prezzoConLoSconto} euro`;
-console.log(messaggio);
 
-// Scrivi sulla pagina il prezzo del biglietto
+console.log(nomeUtente, kmUtente, etaUtente, prezzoSenzaSconto);
 
-document.getElementById("mio_form").innerHTML = messaggio;
 
-        }
-
-        console.log(nomeUtente, kmUtente, etaUtente, prezzoSenzaSconto);
+      
+}
+);  
