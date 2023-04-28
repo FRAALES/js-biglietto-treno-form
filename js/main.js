@@ -8,33 +8,11 @@ let prezzoConLoSconto;
 
 
 
-// Chiedi all'utente Nome e Cognome
+// Chiedi all'utente Nome e Cognome, quanti km vuole percorrere,la sua età
 function myFunction() {
 nomeUtente = document.getElementById("nome").value;
-        }
-
-        console.log(nomeUtente);
-
-
-
-
-// Chiedi all'utente quanti km vuole percorrere
-
-function myFunction() {
-    kmUtente = document.getElementById("km").value;
-            }
-    
-            console.log(kmUtente);
-
-
-
-// Chiedi all’utente la sua età, 
-function myFunction() {
-    etaUtente = document.getElementById("eta").value;
-            }
-    
-            console.log(etaUtente);
-
+kmUtente = document.getElementById("km").value;
+etaUtente = document.getElementById("eta").value;
 
 
 // Moltiplica kmUtente per 0,21
@@ -77,3 +55,7 @@ console.log(messaggio);
 // Scrivi sulla pagina il prezzo del biglietto
 
 document.getElementById("mio_form").innerHTML = messaggio;
+
+        }
+
+        console.log(nomeUtente, kmUtente, etaUtente, prezzoSenzaSconto);
