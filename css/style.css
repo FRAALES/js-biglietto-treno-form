@@ -1,0 +1,17 @@
+/* Regole generali */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ba1450;
+}
+
+/* Regole header */
+header{
+    color: white;
+    margin: 0 auto;
+    font-weight: 100;
+}
